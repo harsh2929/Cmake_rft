@@ -1,0 +1,22 @@
+-> DEPENDENCIES TO BE INSTALLED BEFOREHAND:
+A) nlohmann-json library (include files), after the download link against
+CMakelist.txt file by: ==>" find_package(nlohmann_json REQUIRED)
+target_link_libraries(MyLibrary PRIVATE nlohmann_json::nlohmann_json) "
+
+B) python json module for string generation
+
+
+
+-----------------------------------------------------------------------------
+
+->STEPS FOR EXECUTION (substitute mylibrary with name of req library)
+
+
+** there are two code files, based on cpp and python as required 
+
+1. Cd to the directory with cmake file and create a build directory
+2. generate makefile and build an executable
+3. run root command and load shared library by ".L libMyLibrary.so"
+4. Call function by: "auto obj_1 = create_from_json("MyClass", {"first", "The First Instance", 1});
+obj_1->Print();"
+
