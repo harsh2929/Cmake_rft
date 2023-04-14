@@ -84,7 +84,7 @@ template <class Key, class T, class IgnoredLess = std::less<Key>,
         }
 
         JSON_THROW(std::out_of_range("key not found"));
-    }
+    } //add better error handling 
 
     size_type erase(const Key& key)
     {
