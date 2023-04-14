@@ -18,5 +18,7 @@ B) python json module for string generation
 2. generate makefile and build an executable
 3. run root command and load shared library by ".L libMyLibrary.so"
 4. Call function by: "auto obj_1 = create_from_json("MyClass", {"first", "The First Instance", 1});
-obj_1->Print();"
+obj_1->Print();
+
+dep not working in edg 
 
