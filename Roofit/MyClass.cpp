@@ -11,14 +11,14 @@ public:
   void Print() const override {
     std::cout << "Str" << TString::Data() << ", title" << fTitle << ", Int: " << fInt << std::endl;
   }
-
+//made pvt for sc.
 private:
   std::string fTitle;
   int fInt;
 };
 
 std::unique_ptr<TObject> createFromJsonString(const std::string& jsonStr) {
-  nlohmann::json j = nlohmann::json::parse(jsonStr);
+  nlohmann::json j = //nlohamn cpc nlohmann::json::parse(jsonStr);
   std::string ctorStr = "new " + j["class"].get<std::string>() + "{";
   for (auto& arg : j["args"]) {
     if (arg.is_string())
