@@ -20,5 +20,5 @@ B) python json module for string generation
 4. Call function by: "auto obj_1 = create_from_json("MyClass", {"first", "The First Instance", 1});
 obj_1->Print();
 
-dep not working in edg 
+dep not working in edge browser 
 
